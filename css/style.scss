@@ -372,7 +372,7 @@ pre {
   position: relative;
 }
 .site-title {
-  font-size: 64px;
+  font-size: 40px;
   font-weight: 100;
   font-family: 'PT Sans';
   text-transform: capitalize;
@@ -390,8 +390,8 @@ pre {
   font-family: 'Josefin Sans';
 }
 .exclamationMark {
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .site-navigation {
   color: #aaa;
@@ -423,6 +423,7 @@ pre {
 }
 .site-nav {
   .page-link {
+    float: right;
     color: $text-color;
     line-height: $base-line-height;
     // Gaps between nav items, but not on the last one
@@ -459,11 +460,9 @@ pre {
       display: none;
     }
     &:hover .trigger {
-      display: block;
       padding-bottom: 5px;
     }
     .page-link {
-      display: block;
       padding: 5px 10px;
       &:not(:last-child) {
         margin-right: 0;
@@ -652,6 +651,9 @@ pre {
 .postNext {
     text-align: right;
 }
+
+
+
 
 /**
  * Syntax highlighting styles

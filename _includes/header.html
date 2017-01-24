@@ -1,19 +1,15 @@
 
 <div class="wrapper">
-  <center> <a href="/index.html"><div class="site-title">   {{site.title}} </div></a></center>
-</div>
-<div class="wrapper site-description">
-<center>  {{site.description}} </center>
-</div>
-<div class="wrapper">
   <div class="trigger site-navigation">
-    <a class="page-link" href="{{site.url}}{{site.baseurl}}">HOME</a>
-
+  	<a style="font-size: 15px; font-weight: 900;" class="page-link"  href="/index.html">{{site.title}}</a>
     {% for sitePage in site.pages %}
     {% if sitePage.title %}
-
-    <span class="exclamationMark">/</span><a class="page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
+  	  <a style="float:right;" class="page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
+  	  <span style="float:right;" class="exclamationMark">/</span>
     {% endif %}
     {% endfor %}
+    <a style="float:right;" class="page-link" href="{{site.url}}{{site.baseurl}}">HOME</a>
   </div>
 </div>
+
+
