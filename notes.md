@@ -20,7 +20,7 @@ type: section
 	    {% for post in site.notes %}
 	    	{% if post.categories contains cat %}
 			<li>
-			  <h3 style="margin-left:10px;font-size:17px; margin-top: -15px;">
+			  <h3 style="margin-left:25px;font-size:17px; margin-top: -15px;">
 			    <i class="fa fa-sticky-note-o" aria-hidden="true"></i>
 				<a class="post-link-main" style="padding-left:5px;" href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }}</a>
 				<span style="float:right;" class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
