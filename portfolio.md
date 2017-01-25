@@ -2,11 +2,9 @@
 layout: page
 title: Portfolio
 tagline: "a brief overview of my career, education and development."
+description: My portfolio highlighting a suite of professional and elemetary projects.
 type: section
 ---
-
-
-
 
 <div class="manual-post">
   <div class="manual manual-title">

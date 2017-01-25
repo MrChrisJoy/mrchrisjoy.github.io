@@ -3,6 +3,7 @@ layout: page
 title: Notes
 permalink: /notes/
 tagline: "Cheatsheets, Summaries and Other Resources for Slackers."
+description: Personal notes for UNSW CSE courses, Australian School of Business and the Higher School Certificate.
 type: section
 ---
 
