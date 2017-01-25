@@ -476,8 +476,9 @@ pre {
  */
 .site-footer {
   border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  padding: 30px;
 }
+
 .footer-heading {
   font-size: 18px;
   margin-bottom: $spacing-unit / 2;
@@ -560,7 +561,7 @@ pre {
 }
 .post-link {
   display: block;
-  font-size: 24px;
+  font-size: 10px;
 }
 /**
  * Posts

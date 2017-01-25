@@ -13,8 +13,15 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.chrisjoy.me" # the base hostname & protocol for your site
 twitter_username: mrchrisjoy
 github_username:  mrchrisjoy
+instagram_username: mrchrisjoy
 paginate: 5
+permalink: /:categories/:title/
 
 gems: [jekyll-paginate, kramdown]
 # Build settings
 markdown: kramdown
+
+collections:
+  notes:
+    output: true
+    permalink: /:categories/:title
