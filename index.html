@@ -18,6 +18,7 @@ title: Hello
   <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
   <strong>Random Photos</strong><br>
 </div><br>
+</div>
 
 <div id="instafeed"></div>
 <br>
@@ -30,16 +31,16 @@ title: Hello
   <i class="fa fa-book fa-lg" aria-hidden="true"></i>
   <strong>Recent Thoughts / Blog Posts</strong><br>
 </div><br>
+</div>
 
-<ul class="post-list">
+<ul class="post-list" style="margin-left:10px;">
   {% for post in site.posts limit:4 %}
     <li>
       <h4>
-        <a style="font-size:20px;" class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <span style="float:right;" class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <i  class="fa fa-sticky-note-o" aria-hidden="true"></i>
+        <a style="margin-left:10px;font-size:20px;" class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <span style="float:right;color:grey;" class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
       </h4>
     </li>
   {% endfor %}
 </ul>
-
-
