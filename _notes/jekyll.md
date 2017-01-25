@@ -1,6 +1,7 @@
 ---
 layout: post
 title : How to use Jekyll + Markdown.
+date:   2016-03-30 19:45:31 +0530
 categories: UNSW
 tags: "tutorial"
 ---
