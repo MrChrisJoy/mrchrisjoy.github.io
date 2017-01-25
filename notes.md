@@ -18,7 +18,7 @@ type: section
 		</div>
 	</div><br>
 
-	    {% for post in site.notes %}
+	    {% for post in site.notes | reversed %}
 	    	{% if post.categories contains cat %}
 			<li>
 			  <h3 style="margin-left:25px;font-size:17px; margin-top: -15px;">
