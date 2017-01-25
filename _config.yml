@@ -15,7 +15,7 @@ twitter_username: mrchrisjoy
 github_username:  mrchrisjoy
 instagram_username: mrchrisjoy
 paginate: 5
-permalink: /:title/
+permalink: /:categories/:title/
 
 gems: [jekyll-paginate, kramdown]
 # Build settings
