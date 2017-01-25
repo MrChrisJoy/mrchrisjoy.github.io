@@ -8,7 +8,7 @@
 # Site settings
 title: Chris Joy
 email: chrisjoy@protonmail.com
-description: This is meant to be a description.
+description: Chris Joy's personal website. Exploring social, economic, mathematical and computational frameworks for the advancement of civilisation.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 twitter_username: mrchrisjoy
@@ -18,7 +18,7 @@ paginate: 5
 permalink: /:categories/:title/
 
 future: true
-gems: [jekyll-paginate, kramdown]
+gems: [jekyll-paginate, kramdown, jekyll-seo-tag]
 # Build settings
 markdown: kramdown
 
