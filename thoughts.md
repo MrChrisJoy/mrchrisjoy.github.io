@@ -9,7 +9,7 @@ type: section
 
 <ul class="post-list" style="padding-top: 30px;">
 
-	{% for post in site.posts %}
+	{% for post in site.posts | reversed %}
   <div class="post postContent">
     <div  class="postDate"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
     </div>
