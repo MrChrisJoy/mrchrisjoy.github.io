@@ -10,7 +10,7 @@ title: Chris Joy
 email: chrisjoy@protonmail.com
 description: This is meant to be a description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.chrisjoy.me" # the base hostname & protocol for your site
+url: # the base hostname & protocol for your site
 twitter_username: mrchrisjoy
 github_username:  mrchrisjoy
 instagram_username: mrchrisjoy
