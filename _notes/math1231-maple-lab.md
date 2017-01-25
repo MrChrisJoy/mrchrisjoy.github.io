@@ -10,10 +10,10 @@ categories: unsw
 
 ### Q1.
 ![q1-question](/images/maple-test/q1.PNG){:class="img-responsive"}
-
- `Solution:
+<div>
+Solution:
 <em style="color:red"> >>></em> A := <<6534, 37886, 17462, -3738, 4430> | <32490, -26590, -49930, 21570, 51050> | <21912, -6552, -10284, -84984, -72360> | <-14745, -25505, -21035, 6315, 14575> | <26985, 26065, -20645, 16605, 24025>>;
-`
+</div>
 
 ### Q2.
 ![q2-question](/images/maple-test/q2.PNG){:class="img-responsive"}
