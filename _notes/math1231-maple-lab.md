@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Math1231: Maple Lab Test Solutions"
+title:  "Math1231: Maple Lab Test Questions & Solutions"
 date: '2017-01-26 19:45:31 +1100'
 author: Chris Joy
 categories: unsw
@@ -8,60 +8,60 @@ categories: unsw
 
 **Disclaimer: These notes are in no way affiliated with UNSW's School of Mathematics and MathSoc. Use them at your own risk. I highly recommend you try doing the practice questions yourself and use these notes if your really stuck.
 
-### Q1
+### Q1.
+![q1-question](/images/maple-test/q1.PNG){:class="img-responsive"}
 
-### Q2
+### Q2.
 
-### Q3
+### Q3.
 
-### Q4
+### Q4.
 
-### Q5
+### Q5.
 
-### Q6
+### Q6.
 
-### Q7
+### Q7.
 
-### Q8
+### Q8.
 
-### Q9
+### Q9.
 
-### Q10
+### Q10.
 
-### Q11
+### Q11.
 
-### Q12
+### Q12.
 
-### Q13
+### Q13.
 
-### Q14
+### Q14.
 
-### Q15
+### Q15.
 
-### Q15
+### Q15.
 
-### Q16
+### Q16.
 
-### Q17
+### Q17.
 
-### Q18
+### Q18.
 
-### Q19
+### Q19.
 
-### Q20
+### Q20.
 
-### Q21
+### Q21.
 
-### Q22
+### Q22.
 
-### Q23
+### Q23.
 
-### Q24
+### Q24.
 
-### Q25
+### Q25.
 
-### Q26
+### Q26.
 
-### Q27
-
+### Q27.
 
