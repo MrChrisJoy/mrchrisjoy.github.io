@@ -3,7 +3,6 @@ layout: page
 title: Notes
 permalink: /notes/
 tagline: "Cheatsheets, Summaries and Other Resources for Slackers."
-categories: "notes"
 type: section
 ---
 
