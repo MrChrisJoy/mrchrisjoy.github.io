@@ -99,5 +99,5 @@ var quotes = [
 ];
 var quote = quotes[Math.floor(Math.random() * quotes.length)];
 document.getElementById("quote").innerHTML =
-  '<p>&ldquo;<e style="font-style:italic;">' + quote.text + '</e>&rdquo; <e style="font-weight: 900; font-color: black;">' + quote.author + '</e> </p>';
+  '<p>&ldquo;<e style="font-style:italic;">' + quote.text + '</e>&rdquo; <br><e style="font-weight: 900;font-color:black;float:right;">' + quote.author + '</e> </p>';
 })();

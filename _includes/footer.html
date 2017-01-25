@@ -1,50 +1,46 @@
 <footer class="site-footer">
 
   <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list footer-content">
-          <li>Copyright <i class="fa fa-copyright"></i> 2017, <a href="https://keybase.io/chrisjoy/">Christopher Joy</a> </li>
-          <li>Built using lots of <i class="fa fa-coffee"></i> and <i class="fa fa-heart"></i></li>
-          <li><i class="fa fa-server"></i> Hosted on  <a href="http://github.com/mrchrisjoy/mrchrisjoy.github.io/">Github</a> </li>
-
-
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2 footer-content">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.instagram_username %}
-          <li>
-            {% include icon-instagram.html username=site.instagram_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          <ul class="contact-list footer-content">
+            <li>Copyright <i class="fa fa-copyright"></i> 2017, <a href="https://keybase.io/chrisjoy/">Christopher Joy</a> </li>
+            <li>Made with <i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i></li>
+            <li>Hosted on  <a href="http://github.com/mrchrisjoy/mrchrisjoy.github.io/">Github</a> </li>
 
 
-      <div class="footer-col footer-col-3 site-description">
-        <div id="quote"></div>
-      </div>
-      <script type="text/javascript" src="{{ "/js/quotes.js" | prepend: site.baseurl }}"></script>
-      <script type="text/javascript" src="http://cdn.bootcss.com/instafeed.js/1.4.1/instafeed.min.js"></script>
-      <script type="text/javascript" src="{{ "/js/instafeed.js" | prepend: site.baseurl }}"></script>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-col-2 footer-content">
+          <ul class="social-media-list">
+            {% if site.github_username %}
+            <li>
+              {% include icon-github.html username=site.github_username %}
+            </li>
+            {% endif %}
+
+            {% if site.instagram_username %}
+            <li>
+              {% include icon-instagram.html username=site.instagram_username %}
+            </li>
+            {% endif %}
+
+            {% if site.twitter_username %}
+            <li>
+              {% include icon-twitter.html username=site.twitter_username %}
+            </li>
+            {% endif %}
+          </ul>
+        </div>
 
 
+        <div class="footer-col footer-col-3 site-description" style="float:right">
+          <div id="quote"></div>
+        </div>
+        <script type="text/javascript" src="{{ "/js/quotes.js" | prepend: site.baseurl }}"></script>
+        <script type="text/javascript" src="http://cdn.bootcss.com/instafeed.js/1.4.1/instafeed.min.js"></script>
+        <script type="text/javascript" src="{{ "/js/instafeed.js" | prepend: site.baseurl }}"></script>
     </div>
   </div>
-
 </footer>

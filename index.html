@@ -3,41 +3,29 @@ layout: default
 title: Hello
 ---
 
-<style type="text/css">
-</style>
-
-<br><br><br>
 <h2><i class="fa fa-hand-peace-o" aria-hidden="true"></i> Under Construction</h2>
-<p>I'm currently building this website.
-</p>
-<br><br><br>
+<p>I'm currently in the process of redesigning this site.</p>
 
 
-<br>
 <div class="manual-post">
   <div class="manual manual-title">
-  <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-  <strong>Random Photos</strong><br>
-</div><br>
+    <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+    <strong>Random Photography</strong>
+  </div>
+  <div style="padding-top:20px;" id="instafeed"></div>
 </div>
-
-<div id="instafeed"></div>
 <br>
 <br>
-<br>
-
-<br>
-<div class="manual-post">
+<div class="manual-post" style="padding-top:40px;">
   <div class="manual manual-title">
   <i class="fa fa-book fa-lg" aria-hidden="true"></i>
   <strong>Recent Thoughts / Blog Posts</strong><br>
 </div><br>
 </div>
-
 <ul class="post-list" style="margin-left:10px;">
   {% for post in site.posts limit:4 %}
     <li>
-      <h4>
+      <h4 style="margin-left:10px;font-size:17px; margin-top: -15px;">
         <i  class="fa fa-sticky-note-o" aria-hidden="true"></i>
         <a style="margin-left:10px;font-size:20px;" class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <span style="float:right;color:grey;" class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -46,4 +34,20 @@ title: Hello
   {% endfor %}
 </ul>
 
-<br><br><br>
+<div class="manual-post">
+  <div class="manual manual-title">
+  <i class="fa fa-folder-open fa-lg" aria-hidden="true"></i>
+  <strong>Recent Notes / Resources</strong><br>
+</div><br>
+</div>
+<ul class="post-list" style="margin-left:10px;">
+  {% for post in site.notes limit:4 %}
+    <li>
+      <h4 style="margin-left:10px;font-size:17px; margin-top: -15px;">
+        <i  class="fa fa-sticky-note-o" aria-hidden="true"></i>
+        <a style="margin-left:10px;font-size:20px;" class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <span style="float:right;color:grey;" class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </h4>
+    </li>
+  {% endfor %}
+</ul>
