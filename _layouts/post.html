@@ -5,12 +5,14 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline"><a class="post-title-link"  href="{{page.url}}">{{ page.title }}</a></h1>
-    {% if page.author %}
-      <strong><span>By </span><span class="small-site-title">{{page.author}}</span></strong>
-     {% endif %}
-    {% if page.date %}
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-    {% endif %}
+      <center style="margin-top:-25px; margin-bottom:35px;">
+      {% if page.author %}
+        By<strong><span class="small-site-title"> {{page.author}} </span></strong>on
+       {% endif %}
+      {% if page.date %}
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+      {% endif %}
+      </center>
   </header>
 
   <div class="post-content" itemprop="articleBody">
