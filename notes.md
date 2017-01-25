@@ -12,12 +12,12 @@ type: section
 	{% assign cats =  site.notes | map: 'categories' | join: ','  | split: ',' | uniq %}
     {% for cat in cats %}
 
-<div class="manual-post">
-  <div class="manual manual-title">
-  <i class="fa fa-book fa-lg" aria-hidden="true"></i>
-  <strong>{{ cat }}</strong><br>
-</div><br>
-</div>
+	<div class="manual-post">
+		<div class="manual manual-title">
+	  		<i class="fa fa-book fa-lg" aria-hidden="true"></i>
+	 		<strong>{{ cat }}</strong><br>
+		</div><br>
+	</div>
 
 	    {% for post in site.notes %}
 	     {% if post.categories contains cat %}
