@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Gravity!"
+title:  "Thanks 'Gravity' for Powering this Website!"
 date:   2016-03-30 19:45:31 +0530
-author: "Hemang Kumar"
+author: "Sheldon Cooper"
 categories: jekyll
 ---
 
