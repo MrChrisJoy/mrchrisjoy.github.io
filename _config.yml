@@ -25,3 +25,4 @@ markdown: kramdown
 collections:
   notes:
     output: true
+    permalink: /:categories/:title/
