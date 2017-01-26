@@ -12,7 +12,7 @@ type: section
     <strong>Development / Projects</strong>
   </div>
   <div class="portfolio-content">
-    Nerostack
+    Coming Soon!
   </div>
 </div>
 
@@ -22,7 +22,7 @@ type: section
     <strong>My Timeline (Career / Education)</strong>
   </div>
   <div class="portfolio-content">
-    Timeline
+    Coming Soon!
   </div>
 </div>
 
