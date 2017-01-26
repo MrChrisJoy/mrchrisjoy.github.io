@@ -67,7 +67,14 @@ dl, dd, ol, ul, figure {
     list-style-type: none;
 }
 
-
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $grey-color-light;
+  margin-top: 2em;
+  margin-buttom: 2em;
+  padding-top: 2em;
+}
 
 
 /* Remove margins and padding from the list, and add a black background color */
@@ -131,6 +138,17 @@ ul.topnav li.icon {display: none; margin-right:10px}
     display: block;
 }
 
+.active{
+    opacity: 0.7;
+    background:white;
+    color:#FFF
+}
+.cat-button {
+  background: $grey-color-light;
+  border:0;
+  padding:10px;
+  text-transform:uppercase;
+}
 
 
 /**
