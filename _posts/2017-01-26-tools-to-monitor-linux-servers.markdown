@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Top 3 Free Tools to Maintain your Linux Cluster"
+title:  "3 Free Tools to Maintain your Linux Cluster"
 date:   2017-01-26 19:45:31 +1000
 author: "Chris Joy"
 categories: sysadmin
