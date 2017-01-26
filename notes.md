@@ -7,12 +7,21 @@ description: Chris's personal notes for UNSW CSE courses, Australian School of B
 type: section
 ---
 
+<hr style="margin-top: 2em; height: 1px; border: 0; border-top: 1px solid #E8E8E8; padding-bottom: 20px"/>
+<div style="display:inline;">Categories
+{% assign cats =  site.notes | map: 'categories' | join: ','  | split: ',' | uniq %}
+{% for cat in cats %}
+ <code style="padding:10px; text-transform:uppercase;"><i class="fa fa-book fa-lg" aria-hidden="true"></i><a href="#{{ cat }}"> {{ cat }}</a></code>
+{% endfor %}
+</div>
+<hr style="margin-top: 2em; height: 1px; border: 0; border-top: 1px solid #E8E8E8; padding-bottom: 20px"/>
+
 <ul class="post-list">
 	{% assign cats =  site.notes | map: 'categories' | join: ','  | split: ',' | uniq %}
     {% for cat in cats %}
 
 	<div class="manual-post">
-		<div class="manual manual-title">
+		<div class="manual manual-title" id="{{ cat }}">
 	  		<i class="fa fa-book fa-lg" aria-hidden="true"></i>
 	 		<strong>{{ cat }}</strong>
 		</div>
