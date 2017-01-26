@@ -101,3 +101,13 @@ var quote = quotes[Math.floor(Math.random() * quotes.length)];
 document.getElementById("quote").innerHTML =
   '<p>&ldquo;<e style="font-style:italic;">' + quote.text + '</e>&rdquo; <br><e style="font-weight: 900;font-color:black;float:right;">' + quote.author + '</e> </p>';
 })();
+
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}

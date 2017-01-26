@@ -3,7 +3,7 @@ layout: page
 title: Notes
 permalink: /notes/
 tagline: "Cheatsheets, Summaries and Other Resources for Slackers."
-description: Personal notes for UNSW CSE courses, Australian School of Business and the Higher School Certificate.
+description: Chris's personal notes for UNSW CSE courses, Australian School of Business and the Higher School Certificate.
 type: section
 ---
 
@@ -17,8 +17,8 @@ type: section
 	 		<strong>{{ cat }}</strong>
 		</div>
 	</div><br>
-
-	    {% for post in site.notes | reversed %}
+		{% assign posts = site.notes | sort:"title" %}
+	    {% for post in posts%}
 	    	{% if post.categories contains cat %}
 			<li>
 			  <h3 style="margin-left:25px;font-size:17px; margin-top: -15px;">

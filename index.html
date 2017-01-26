@@ -16,6 +16,7 @@ title: Hello
 </div>
 <br>
 <br>
+<br>
 <div class="manual-post" style="padding-top:40px;">
   <div class="manual manual-title">
   <i class="fa fa-book fa-lg" aria-hidden="true"></i>
@@ -23,12 +24,13 @@ title: Hello
 </div><br>
 </div>
 <ul class="post-list" style="margin-left:10px;">
-  {% for post in site.posts limit:4 | reversed %}
+	{% assign posts = site.posts | sort:"date" | reverse %}
+  	{% for post in posts limit:4 %}
     <li>
-      <h4 style="margin-left:10px;font-size:17px; margin-top: -15px;">
-        <i  class="fa fa-sticky-note-o" aria-hidden="true"></i>
-        <a style="margin-left:10px;font-size:20px;" class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <span style="float:right;color:grey;" class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <h4 style="margin-left:10px;font-size:15px;margin-top:-15px;">
+		<i  class="fa fa-sticky-note-o" aria-hidden="true"></i>
+		<a style="margin-left:10px;font-size:15px;" class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+		<span style="float:right;color:grey;" class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
       </h4>
     </li>
   {% endfor %}
@@ -41,15 +43,16 @@ title: Hello
 </div><br>
 </div>
 <ul class="post-list" style="margin-left:10px;">
-  {% for post in site.notes limit:4 | reversed %}
-    <li>
-      <h4 style="margin-left:10px;font-size:17px; margin-top: -15px;">
-        <i  class="fa fa-sticky-note-o" aria-hidden="true"></i>
-        <a style="margin-left:10px;font-size:20px;" class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <span style="float:right;color:grey;" class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
-      </h4>
-    </li>
-  {% endfor %}
+	{% assign posts = site.notes | sort:"date" | reverse %}
+  	{% for post in posts limit:4 %}
+	<li>
+	  <h4 style="margin-left:10px;font-size:15px;margin-top:-15px;">
+	    <i  class="fa fa-sticky-note-o" aria-hidden="true"></i>
+	    <a style="margin-left:10px;font-size:15px;" class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	    <span style="float:right;color:grey;" class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
+	  </h4>
+	</li>
+	{% endfor %}
 </ul>
 
 <script type="text/javascript" src="http://cdn.bootcss.com/instafeed.js/1.4.1/instafeed.min.js"></script>
