@@ -39,7 +39,7 @@ type: section
     <a class='postLink' href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a>
     </div>
     <div class="postExt">
-   {{ post.content | strip_html | truncatewords:60}}
+   {{ post.content | strip_html | truncatewords:20}}
     </div>
     <span class="page-link" style="float:right" ><a href="{{site.url}}{{site.baseurl}}{{post.url}}">Read More »</a></span>
   </div>

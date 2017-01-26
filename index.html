@@ -4,8 +4,8 @@ title: Hello
 ---
 
 <center style="margin-top:40px"><h2>Hello. I come in <i class="fa fa-hand-peace-o" aria-hidden="true"></i></h2>
-<p>I'm currently in the process of redesigning this site.</p>
-</center>
+<p>Just a simple being who like ice cream.</p> Welcome to my little space on the interwebs.
+</center><br><br><br>
 
 <div class="manual-post">
   <div class="manual manual-title">
@@ -13,10 +13,8 @@ title: Hello
     <strong>Random Photography</strong>
   </div>
   <div style="padding-top:20px;" id="instafeed"></div>
-</div>
-<br>
-<br>
-<br>
+</div><br><br><br>
+
 <div class="manual-post" style="padding-top:40px;">
   <div class="manual manual-title">
   <i class="fa fa-book fa-lg" aria-hidden="true"></i>
@@ -25,7 +23,7 @@ title: Hello
 </div>
 <ul class="post-list" style="margin-left:10px;">
 	{% assign posts = site.posts | sort:"date" | reverse %}
-  	{% for post in posts limit:4 %}
+  	{% for post in posts limit:8 %}
     <li>
       <h4 style="margin-left:10px;font-size:15px;margin-top:-15px;">
 		<i  class="fa fa-sticky-note-o" aria-hidden="true"></i>
@@ -44,7 +42,7 @@ title: Hello
 </div>
 <ul class="post-list" style="margin-left:10px;">
 	{% assign posts = site.notes | sort:"date" | reverse %}
-  	{% for post in posts limit:4 %}
+  	{% for post in posts limit:8 %}
 	<li>
 	  <h4 style="margin-left:10px;font-size:15px;margin-top:-15px;">
 	    <i  class="fa fa-sticky-note-o" aria-hidden="true"></i>

@@ -1,9 +1,9 @@
 function toggleDiv(divId) {
- $("."+divId).toggle("slow", function(){});
+	$("."+divId).toggle("slow", function(){});
 }
 function showDiv(divId) {
- $("."+divId).show("slow", function(){});
- $("button").removeClass('active');
+	$("."+divId).show("slow", function(){});
+	$("button").removeClass('active');
 }
 function myFunction() {
     var x = document.getElementById("myTopnav");

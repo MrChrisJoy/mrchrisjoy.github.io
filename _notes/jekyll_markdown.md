@@ -3,7 +3,7 @@ layout: post
 title : "How to use Jekyll + Markdown."
 date:   2016-03-30 19:45:31 +0530
 author: "Chandler Bling"
-categories: jekyll
+categories: markdown
 ---
 
 <h2>Gravity</h2>

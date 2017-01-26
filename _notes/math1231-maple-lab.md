@@ -3,7 +3,7 @@ layout: post
 title:  "Math1231: Maple Lab Test Questions & Solutions"
 date: '2017-01-26 19:45:31 +1100'
 author: Chris Joy
-categories: unsw
+categories: unsw-math
 ---
 
 These solutions have been extracted from the 2016s2 maple lab practice test. These notes are in no way affiliated with UNSW's School of Mathematics nor UNSW's MathSoc. I highly recommend you try doing the practice questions yourself and use these notes if your really stuck.
