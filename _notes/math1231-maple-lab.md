@@ -12,7 +12,7 @@ Maple 18 was used to generate the solutions.
 <hr><br><strong>Q1 Solution:</strong>
 ![q1-question](/images/maple-test/q1.PNG){:class="img-responsive"}
 <pre>
->>> with(LinearAlgebra): # Include the LinearAlgebra package, if not already loaded.
+<em style="color:blue;">>>></em> with(LinearAlgebra): # Include the LinearAlgebra package, if not already loaded.
 >>> A := <<6534, 37886, 17462, -3738, 4430> | <32490, -26590, -49930, 21570, 51050> | <21912, -6552, -10284, -84984, -72360> | <-14745, -25505, -21035, 6315, 14575> | <26985, 26065, -20645, 16605, 24025>>;
 >>> Eigenvalues(A);
 </pre>
@@ -57,20 +57,17 @@ Maple 18 was used to generate the solutions.
        x + 5    2                     3   x + 7          3
                x  + 2 x - 2   / 2    \            (x - 5)
                               \x  + 2/
-
 </pre>
 <br><br>
-<hr>### Q7.
+<hr><br><strong>Q7 Solution:</strong>
 ![q7-question](/images/maple-test/q7.PNG){:class="img-responsive"}
-<br><strong>Q7 Solution:</strong>
 <pre>
 >>> f := (x,y)-> 8*x^8*y^3*sin(3*x-5*y);
 >>> D[1$8, 2$8](f)(2,2) # where x is 1$ and y is 2$
 </pre>
 <br><br>
-<hr>### Q8.
+<hr><br><strong>Q8 Solution:</strong>
 ![q8-question](/images/maple-test/q8.PNG){:class="img-responsive"}
-<br><strong>Q8 Solution:</strong>
 <pre>
 >>> ODE := y(x)*diff(y(x),x$2) + diff(y(x),x)^2 = 0;
 >>> dsolve({ODE, y(0)=4, D(y)(0)=7}, y(x));
@@ -79,9 +76,8 @@ Maple 18 was used to generate the solutions.
                     y(x) = 2 (4 + 14 x)
 </pre>
 <br><br>
-<hr>### Q9.
+<hr><br><strong>Q9 Solution:</strong>
 ![q9-question](/images/maple-test/q9.PNG){:class="img-responsive"}
-<br><strong>Q9 Solution:</strong>
 <pre>
 >>> ODE := y(x)*diff(y(x),x$2) - 1/2*diff(y(x),x)^2 = 0;
 >>> dsolve({ODE, y(0)=1, D(y)(0)=6}, y(x));
@@ -90,9 +86,8 @@ Maple 18 was used to generate the solutions.
                      y(x) = 9 x  + 6 x + 1
 </pre>
 <br><br>
-<hr>### Q10.
+<hr><br><strong>Q10 Solution:</strong>
 ![q10-question](/images/maple-test/q10.PNG){:class="img-responsive"}
-<br><strong>Q10 Solution:</strong>
 <pre>
 >>> ODE := y(x)*diff(y(x), x$2) -2/3*diff(y(x),x)^2 = 0;
 >>> dsolve({ODE, y(0)=2, D(y)(0)=7}, y(x));
@@ -102,9 +97,8 @@ Maple 18 was used to generate the solutions.
                        108      6
 </pre>
 <br><br>
-<hr>### Q11.
+<hr><br><strong>Q11 Solution:</strong>
 ![q11-question](/images/maple-test/q11.PNG){:class="img-responsive"}
-<br><strong>Q11 Solution:</strong>
 <pre>
 >>> ODE := y(x)*diff(y(x),x$2) + 4*diff(y(x),x)^2 = 0;
 >>> dsolve({ODE, y(0)=4, D(y)(0)=3}, y(x));
@@ -113,45 +107,44 @@ Maple 18 was used to generate the solutions.
                    y(x) = 2 (120 x + 32)
 </pre>
 <br><br>
-<hr>### Q12.
+<hr><br><strong>Q12 Solution:</strong>
 ![q12-question](/images/maple-test/q12.PNG){:class="img-responsive"}
 <br><br>
-<hr>### Q13.
+<hr><br><strong>Q13 Solution:</strong>
 ![q13-question](/images/maple-test/q13.PNG){:class="img-responsive"}
 <br><br>
-<hr>### Q14.
+<hr><br><strong>Q14 Solution:</strong>
 ![q14-question](/images/maple-test/q14.PNG){:class="img-responsive"}
 <br><br>
-<hr>### Q15.
+<hr><br><strong>Q15 Solution:</strong>
 ![q15-question](/images/maple-test/q15.PNG){:class="img-responsive"}
 <br><br>
-<hr>### Q16.
+<hr><br><strong>Q16 Solution:</strong>
 ![q16-question](/images/maple-test/q16.PNG){:class="img-responsive"}
 <br><br>
-<hr>### Q17.
+<hr><br><strong>Q17 Solution:</strong>
 ![q17-question](/images/maple-test/q17.PNG){:class="img-responsive"}
 <br><br>
-<hr>### Q18.
+<hr><br><strong>Q18 Solution:</strong>
 ![q18-question](/images/maple-test/q18.PNG){:class="img-responsive"}
 <br><br>
-<hr>### Q19.
+<hr><br><strong>Q19 Solution:</strong>
 ![q19-question](/images/maple-test/q19.PNG){:class="img-responsive"}
 <br><br>
-<hr>### Q20.
+<hr><br><strong>Q20 Solution:</strong>
 ![q20-question](/images/maple-test/q20.PNG){:class="img-responsive"}
 <br><br>
-<hr>### Q21.
+<hr><br><strong>Q21 Solution:</strong>
 ![q21-question](/images/maple-test/q21.PNG){:class="img-responsive"}
 <br><br>
-<hr>### Q22.
+<hr><br><strong>Q22 Solution:</strong>
 ![q22-question](/images/maple-test/q22.PNG){:class="img-responsive"}
 <br><br>
-<hr>### Q23.
+<hr><br><strong>Q23 Solution:</strong>
 ![q23-question](/images/maple-test/q23.PNG){:class="img-responsive"}
 <br><br>
-<hr>### Q24.
+<hr><br><strong>Q24 Solution:</strong>
 ![q24-question](/images/maple-test/q24.PNG){:class="img-responsive"}
-<br><strong>Q24 Solution:</strong>
 <pre>
 >>> restart; # clear memory as we need to reuse the A variable OR use A := 'A'
 >>> with(geom3d): # Load the geom3d package, if not already loaded.
@@ -176,9 +169,8 @@ Maple 18 was used to generate the solutions.
 
 </pre>
 <br><br>
-<hr>### Q25.
+<hr><br><strong>Q25 Solution:</strong>
 ![q25-question](/images/maple-test/q25.PNG){:class="img-responsive"}
-<br><strong>Q25 Solution:</strong>
 <pre>
 >>> restart; # clear memory as we need to reuse the A variable OR use A := 'A'
 >>> with(geom3d): # Load the geom3d package, if not already loaded.
@@ -202,9 +194,8 @@ Maple 18 was used to generate the solutions.
              43625067
 </pre>
 <br><br>
-<hr>### Q26.
+<hr><br><strong>Q26 Solution:</strong>
 ![q26-question](/images/maple-test/q26.PNG){:class="img-responsive"}
-<br><strong>Q26 Solution:</strong>
 <pre>
 >>> restart; # clear memory
 >>> a := proc(n)     # shift + enter
@@ -222,9 +213,8 @@ Maple 18 was used to generate the solutions.
 >>>
 </pre>
 <br><br>
-<hr>### Q27.
+<hr><br><strong>Q27 Solution:</strong>
 <br>![q27-question](/images/maple-test/q27.PNG){:class="img-responsive"}
-<br><strong>Q27 Solution:</strong>
 <pre>
 >>> restart; # clear memory
 >>> Digits := 30;                             # shift + enter
