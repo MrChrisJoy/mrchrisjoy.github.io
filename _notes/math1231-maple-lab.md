@@ -6,7 +6,7 @@ author: Chris Joy
 categories: unsw
 ---
 
-**Disclaimer: These notes are in no way affiliated with UNSW's School of Mathematics nor UNSW's MathSoc. I highly recommend you try doing the practice questions yourself and use these notes if your really stuck. 
+These solutions have been extracted from the 2016s2 maple lab practice test. These notes are in no way affiliated with UNSW's School of Mathematics nor UNSW's MathSoc. I highly recommend you try doing the practice questions yourself and use these notes if your really stuck.
 Maple 18 was used to generate the solutions.
 <br><br><br>
 <hr><br><strong>Q1 Solution:</strong>
@@ -175,23 +175,20 @@ Maple 18 was used to generate the solutions.
 <code style="color:red;">>>></code> restart; # clear memory as we need to reuse the A variable OR use A := 'A'
 <code style="color:red;">>>></code> with(geom3d): # Load the geom3d package, if not already loaded.
 <code style="color:red;">>>></code> point(A, [-3,0,1]); point(B, [3,6,6]); point(C, [19,19,17]);
-<code style="color:red;">>>></code> line(L1, [A, [2,4,2]]);
-<code style="color:red;">>>></code> plane(P, [B, [-4,-4,2]]);
-<code style="color:red;">>>></code> intersection(E, L1, P);
-<code style="color:red;">>>></code> sphere(S, [A,B,C,E]);
-<code style="color:red;">>>></code> center(F, S);
-<code style="color:red;">>>></code> line(L2, [C,F]);
-<code style="color:red;">>>></code> evalf[10](FindAngle(L1,P));
-                         -0.7483271725
-<code style="color:red;">>>></code> coordinates(F);
-                      [-1947  -239  -2577]
+<code style="color:red;">>>></code> sphere(S1, [A,12]);
+<code style="color:red;">>>></code> sphere(S2, [B,C])
+<code style="color:red;">>>></code> intersection(T, S1, S2);
+<code style="color:red;">>>></code> center(E, T);
+<code style="color:red;">>>></code> line(L1, [B,E]);
+<code style="color:red;">>>></code> line(L2, [A, [4,1,1]]);
+<code style="color:red;">>>></code> coordinates(E);
+                      [ 761    235   1172]
                       [-----, ----, -----]
-                      [ 910    70    910 ]
-<code style="color:red;">>>></code> distance(A, L2);
-
-                1               (1/2)         (1/2)
-             -------- 1724588486      43625067
-             43625067
+                      [ 185    37    185 ]
+<code style="color:red;">>>></code> evalf[10](FindAngle(L1,L2));
+                         0.07183271725
+<code style="color:red;">>>></code> distance(L1, L2);
+0
 </pre>
 <br><br>
 <hr><br><strong>Q26 Solution:</strong>
@@ -204,7 +201,7 @@ Maple 18 was used to generate the solutions.
       a[2]:=0;     # shift + enter
       a[3]:=-1;     # shift + enter
       for i from 3 to n-1 do     # shift + enter
-      a[i+1]:=a[i]-4*a[i-1]+a[i-2]     # shift + enter
+          a[i+1]:=a[i]-4*a[i-1]+a[i-2]     # shift + enter
       end do;     # shift + enter
       return a[n]     # shift + enter
     end proc;     # shift + enter
@@ -222,12 +219,12 @@ Maple 18 was used to generate the solutions.
       local a,i;                              # shift + enter
       a[0]:=0;                                # shift + enter
       for i from 1 to m do                    # shift + enter
-        a[i] := evalf(sin((1+a[i-1]/4)^2))    # shift + enter
+          a[i] := evalf(sin((1+a[i-1]/4)^2))    # shift + enter
       end do;                                 # shift + enter
       if abs(a[m]-a[m-1]) < 10^(-18) then     # shift + enter
-        a[m]                                  # shift + enter
+          a[m]                                  # shift + enter
       else                                    # shift + enter
-        -1                                    # shift + enter
+          -1                                    # shift + enter
       end if                                  # shift + enter
     end proc;                                 # shift + enter
 <code style="color:red;">>>></code> f(5);
