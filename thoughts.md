@@ -3,6 +3,7 @@ layout: page
 title: Thoughts
 permalink: /thoughts/
 tagline: "Change your thoughts, Change your world."
+description: "Random Thoughts and Blog Posts."
 category: "thoughts"
 type: section
 ---

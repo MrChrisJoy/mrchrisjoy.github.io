@@ -8,6 +8,3 @@ var feed = new Instafeed({
     template: '<a href="{{link}}" class="photo" target="_blank"><img alt="{{caption}}" src="{{image}}"></a>'
 });
 feed.run();
-
-
-
