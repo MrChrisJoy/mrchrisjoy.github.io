@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/chrisjoy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://chrisjoy.me
+  * I am chrisjoy (https://keybase.io/chrisjoy) on keybase.
+  * I have a public key with fingerprint 082D CAA5 BFE4 25D2 7C4E  19FE C7BF 6F50 91E9 5270
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101f980792829ce1b00bd29925225b7e319239f96d122f2c0b59bbde426320b32f30a",
+            "fingerprint": "082dcaa5bfe425d27c4e19fec7bf6f5091e95270",
+            "host": "keybase.io",
+            "key_id": "c7bf6f5091e95270",
+            "kid": "0101f980792829ce1b00bd29925225b7e319239f96d122f2c0b59bbde426320b32f30a",
+            "uid": "2e33ce249062a4380f96c8b1e79c8e19",
+            "username": "chrisjoy"
+        },
+        "revoke": {
+            "sig_ids": [
+                "ed13da47306bdaac57c7f9ae85d33861152e238409073648f2ad38b8ff3ecfc90f"
+            ]
+        },
+        "service": {
+            "hostname": "chrisjoy.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1487568248,
+    "expire_in": 157680000,
+    "prev": "e2c48a2df808780447d79f3d56d96c222c974b44c384ce1dcca91c7d6e9a13fb",
+    "seqno": 18,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.62
+Comment: https://keybase.io/crypto
+
+yMJrAnicrZJbaFRHGMc3tl1JaiSS+iIN6BTSkkadMzPnzMwm9UHapqU09KGlxQvr
+mVty3HXP9pyT6EajgtjSiy2Klar0YpEqongFwT6k3ZqKlsVWYUVFsReqDxVEjSBq
+7JzQvpQ+dl6Gmfl/v+//fd8cb34k09TwwoWh7Pfd7bWGH7+7OZB5a8/wipVAhKoC
+citBQU9suqh0nOQLgQI5AB3oGM4g5YghLrUjIBQKcY5chFxBNXY4wtxwTzkIGSSh
+cLkQShPkYQQFRgZDH3QCE5T6dFSOglKSYhlS0vddYazQVYhKoh1utKTCeMaF3NHc
+RRTawP4wTiOsOeHHek4Q2jt7yE/Y+w/9/+x7YAKHNMZSI8Khh3yCGbSBkglHUy6Z
+dZ4KYx2V/GU6ddUfBfHSsAKGO0GkB8OCTvsaB33WdAxyC4FWDlY+oRh6Qvm+dKmk
+hvuauQpj5jmOizTCjEAOKfYIM8hXmAlmDNbSSA4NWGzZNuNgICfgaZf+lX2OPXWC
+chQmoQyL9qE/Scq51FNSKafC5Vrk/0bkRVBSdkI2YFBHcRCWQM6xSpkEKdMhjLoe
+Q4R1Ar2iHEQ6H6QKl3oM2pWm0YMWqZEkzEfKMMgog4RQRbnByvWUbRhCSHJKBCHS
+FmeHoqT0uSOp8jT3HWwESIt6uxRatk2V+H2WaftW8pOBSIPh6reLHs00NGWyj01K
+v26mqbHlnw/dtnbyOPlp6p3Pxy4mmw6fOrbgVNxx/jR+8HDWtLvNa54fad3beGd5
+m3kwq/3dqzvR/Vphe3b1h6OzR5YsPnft4KqWGYXNzePbX9+6acvtK+aDrqFisK6j
+emR9dbRj6PKqpzbMzFY+OVisjRzCjYWH1ezYqyGavnt+7ZuXP716/FJu3xeTHYA2
+/hxf2bUsOrGnh1T4O3hE3fqFvzi3tTG3tX897f7ozMe/tZgf9r9x+8aXT85ve+Ls
+K9uOzqvWX1oy6cCvn50XW2oznu0tPHfsxqHXpp/cUR/7fU1Xa/vu7NTZ975+Jr+h
+Xr5+dlpX75T62vfGn97W27N547We95sf766f/gPt/BPVz4ze+8otvvkX6ZBcPg==
+=rJJ4
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/chrisjoy
+
+==================================================================
