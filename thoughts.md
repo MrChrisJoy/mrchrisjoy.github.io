@@ -18,7 +18,7 @@ type: section
   }
 </script>
 
-<hr><div style="display:inline;">Categories
+<hr><div style="display:inline;">
   <button class="cat-button" onclick="showDiv('postContent');"><i class="fa fa-folder-o fa-lg" aria-hidden="true"></i><a> all</a></button>
   {% assign cats =  site.posts | map: 'categories' | join: ','  | split: ',' | uniq %}
   {% for cat in cats %}

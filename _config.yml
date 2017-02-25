@@ -23,6 +23,6 @@ gems: [jekyll-paginate, kramdown, jekyll-seo-tag, jekyll-sitemap]
 markdown: kramdown
 
 collections:
-  notes:
+  resources:
     output: true
     permalink: /:categories/:title/

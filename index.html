@@ -5,13 +5,6 @@ title: Hello
 
 <center style="margin-top:40px"><h2>Hello. I come in <i class="fa fa-hand-peace-o" aria-hidden="true"></i></h2></center><br><br><br><br>
 
-<div class="manual-post">
-  <div class="manual manual-title">
-    <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-    <strong>Random Photography</strong>
-  </div>
-  <div style="padding-top:20px;" id="instafeed"></div>
-</div><br><br><br>
 
 <div class="manual-post" style="padding-top:40px;">
   <div class="manual manual-title">
@@ -34,22 +27,30 @@ title: Hello
 
 <div class="manual-post">
   <div class="manual manual-title">
-  <i class="fa fa-folder-open fa-lg" aria-hidden="true"></i>
-  <strong>Recent Notes / Resources</strong><br>
-</div><br>
+    <i class="fa fa-folder-open fa-lg" aria-hidden="true"></i>
+    <strong>Recent Notes / Resources</strong><br>
+  </div><br>
+  <ul class="post-list" style="margin-left:10px;">
+  	{% assign posts = site.resources | sort:"date" | reverse %}
+    	{% for post in posts limit:8 %}
+  	<li>
+  	  <h4 style="margin-left:10px;font-size:15px;margin-top:-15px;">
+  	    <i  class="fa fa-sticky-note-o" aria-hidden="true"></i>
+  	    <a style="margin-left:10px;font-size:15px;" class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  	    <span style="float:right;color:grey;" class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
+  	  </h4>
+  	</li>
+  	{% endfor %}
+  </ul>
 </div>
-<ul class="post-list" style="margin-left:10px;">
-	{% assign posts = site.notes | sort:"date" | reverse %}
-  	{% for post in posts limit:8 %}
-	<li>
-	  <h4 style="margin-left:10px;font-size:15px;margin-top:-15px;">
-	    <i  class="fa fa-sticky-note-o" aria-hidden="true"></i>
-	    <a style="margin-left:10px;font-size:15px;" class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	    <span style="float:right;color:grey;" class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
-	  </h4>
-	</li>
-	{% endfor %}
-</ul>
+
+<div class="manual-post">
+  <div class="manual manual-title">
+    <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+    <strong>Random Photography</strong>
+  </div>
+  <div style="padding-top:20px;" id="instafeed"></div>
+</div><br><br><br>
 
 <script type="text/javascript" src="https://cdn.bootcss.com/instafeed.js/1.4.1/instafeed.min.js"></script>
 <script type="text/javascript" src="{{ "/js/instafeed.js" | prepend: site.baseurl }}"></script>
