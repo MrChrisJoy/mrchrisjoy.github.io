@@ -36,12 +36,7 @@ type: section
   <div class="portfolio-content">
     <a href="https://linkedin.com/in/mrchrisjoy" target="_blank"><i class="fa fa-linkedin fa-5x" aria-hidden="true"></i></a>
     <a href="https://github.com/mrchrisjoy" target="_blank"><i class="fa fa-github fa-5x" aria-hidden="true"></i></a>
-    <a href="https://bitbucket.org/mrchrisjoy" target="_blank"><i class="fa fa-bitbucket fa-5x" aria-hidden="true"></i></a>
     <a href="https://keybase.io/chrisjoy" target="_blank"><i class="fa fa-key fa-5x" aria-hidden="true"></i></a>
-    <br>
-    <a href="https://twitter.com/mrchrisjoy" target="_blank"><i class="fa fa-twitter fa-5x" aria-hidden="true"></i></a>
-    <a href="https://facebook.com/mrchrisjoy" target="_blank"><i class="fa fa-facebook fa-5x" aria-hidden="true"></i></a>
-    <a href="https://reddit.com/u/mrchrisjoy" target="_blank"><i class="fa fa-reddit fa-5x" aria-hidden="true"></i></a>
     <a href="https://instagram.com/mrchrisjoy" target="_blank"><i class="fa fa-instagram fa-5x" aria-hidden="true"></i></a>
   </div>
 </div>
