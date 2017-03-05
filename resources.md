@@ -2,7 +2,7 @@
 layout: page
 title: Resources
 permalink: /resources/
-tagline: "Cheatsheets, Summaries and Other Resources..."
+tagline: "Cheatsheets, Notes and Other Resources..."
 description: Chris's personal resources for UNSW Courses, Australian School of Business and the Higher School Certificate Exams.
 type: section
 ---

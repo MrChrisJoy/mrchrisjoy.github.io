@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Portfolio
-tagline: "a brief overview of my career, education and development."
+tagline: "brief overview of my projects, career and education."
 description: My portfolio highlighting a suite of professional and elemetary projects.
 excerpt: "Random Thoughts and Blog Posts."
 type: section
