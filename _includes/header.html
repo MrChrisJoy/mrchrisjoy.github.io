@@ -1,17 +1,15 @@
 <div class="wrapper">
 	<div class="trigger site-navigation">
+		<a href="/" class="photo" style="margin-top:-20px;" ><img alt="{{caption}}" src="{{ "/images/pp.jpg" | prepend: site.baseurl }}"></a>
 		<ul class="topnav" id="myTopnav">
-			<a style="font-size:15px; font-weight: 900;" class="page-link"  href="/">{{site.title}}</a>
-			{% for sitePage in site.pages %}
-			    {% if sitePage.type == "section" %}
-					<li><a class="right-nav page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
-				    <span style="float:left;font-size:13px;" class="exclamationMark">|</span></li>
-			    {% endif %}
-			{% endfor %}
-			<li class="icon">
-				<ar href="javascript:void(0);" onclick="myFunction()">&#9776;</ar>
+			<li class="icon"><ar href="javascript:void(0);" onclick="myFunction()">&#9776;</ar></li>
+		{% for sitePage in site.pages %}{% if sitePage.type == "section" %}
+			<li>
+				<a class="right-nav page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
+				<span class="exclamationMark"></span>
 			</li>
+		{% endif %}{% endfor %}
 		</ul>
 	</div>
 </div>
-<hr style="margin-top: 2em; height: 1px; border: 0; border-top: 1px solid #E8E8E8; padding-bottom: 20px"/>
+<hr style="margin-top: 0em; height: 1px; border: 0; border-top: 1px solid #E8E8E8; padding-bottom: 20px"/>
