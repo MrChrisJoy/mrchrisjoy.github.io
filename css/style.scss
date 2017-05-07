@@ -828,3 +828,64 @@ pre {
     .vi    { color: #008080 } // Name.Variable.Instance
     .il    { color: #099 } // Literal.Number.Integer.Long
 }
+
+
+.general-cover {
+  margin-top: -60px;
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-position: 50% 50%;
+}
+.general-cover h1 b{
+  z-index: 1;
+  margin-botton:-14px;
+  font-size: 1.3em;
+  font-family: "Allerta Stencil";
+  text-shadow: 4px 4px black;
+}
+.general-cover span{
+  font-size: 1em;
+  background: red;
+  margin: 0.4em;
+  padding:0.7em;
+  box-shadow: 4px 4px 2px black;
+  display: inline-block;
+}
+.general-cover span b{
+  text-shadow: 2px 2px black;
+}
+
+.general-cover center {
+  margin-top: 20vh;
+  padding: 10px;
+}
+
+@media screen and (max-width:740px) {
+  .general-cover {
+    margin-top: -60px;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+  .general-cover span{
+    font-size: 0.6em;
+    background: red;
+    margin: 0.2em;
+    padding:0.5em;
+    box-shadow: 4px 4px 2px black;
+    display: inline-block;
+  }
+  .general-cover center {
+    margin-top: 10vh;
+    padding: 10px;
+  }
+  .footer-content li{
+    font-size: 15px;
+    font-family: "Josefin Sans";
+    font-weight: 100;
+    letter-spacing: 0.5px;
+  }
+}

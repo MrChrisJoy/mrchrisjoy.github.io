@@ -3,12 +3,12 @@
 		<a href="/" class="photo" style="margin-top:-20px;" ><img alt="{{caption}}" src="{{ "/images/pp3.jpg" | prepend: site.baseurl }}"></a>
 		<ul class="topnav" id="myTopnav">
 			<li class="icon"><ar href="javascript:void(0);" onclick="myFunction()">&#9776;</ar></li>
-		{% for sitePage in site.pages %}{% if sitePage.type == "section" %}
+			{% for sitePage in site.pages %}{% if sitePage.type == "section" %}
 			<li>
 				<a class="right-nav page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
 				<span class="exclamationMark"></span>
 			</li>
-		{% endif %}{% endfor %}
+			{% endif %}{% endfor %}
 		</ul>
 	</div>
 </div>
