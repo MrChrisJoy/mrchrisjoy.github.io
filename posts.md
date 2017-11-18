@@ -5,24 +5,8 @@ permalink: /posts/
 tagline: "random ideas and observations..."
 description: "Random Ideas and Observations."
 ---
-
-<hr>
-<div style="display:inline;">
-  <button class="cat-button" onclick="showDiv('postContent');">
-    <i class="fa fa-folder-o fa-lg" aria-hidden="true"></i>
-    <a> all</a>
-  </button>
-  {% assign cats = site.posts | map: 'categories' | join: ',' | split: ',' | uniq %} {% for cat in cats %}
-  <button class="cat-button" onclick="toggleDiv('{{ cat }}');jQuery(this).toggleClass('active');">
-    <i class="fa fa-folder-o fa-lg" aria-hidden="true"></i>
-    <a> {{ cat }}</a>
-  </button>
-  {% endfor %}
-</div>
-<hr>
-
 <ul class="post-list">
-  {% assign posts = site.posts | sort:"date" | reverse %} {% for post in posts %}
+  {% assign posts = site.posts | sort:"date" | reverse %} {% for post in posts %}{% if post.published %}
   <div class="post postContent {{ post.categories }}">
     <div class="postDate">
       <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
@@ -41,5 +25,5 @@ description: "Random Ideas and Observations."
       <a href="{{site.url}}{{site.baseurl}}{{post.url}}">Read More »</a>
     </span>
   </div>
-  {% endfor %}
+  {% endif %}{% endfor %}
 </ul>

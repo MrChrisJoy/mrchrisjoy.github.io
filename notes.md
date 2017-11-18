@@ -5,23 +5,6 @@ permalink: /notes/
 tagline: "Cheatsheets, Notes and Other Resources..."
 description: School notes, resources etc.
 ---
-
-<hr/>
-<div style="display:inline;">
-	<button class="cat-button" onclick="showDiv('postBody');">
-		<i class="fa fa-folder-o fa-lg" aria-hidden="true"></i>
-		<a> all</a>
-	</button>
-	{% assign cats = site.notes | map: 'categories' | join: ',' | split: ',' | uniq %}
-	{% for cat in cats %}
-	<button class="cat-button" onclick="toggleDiv('{{ cat }}');jQuery(this).toggleClass('active');">
-		<i class="fa fa-folder-o fa-lg" aria-hidden="true"></i>
-		<a> {{ cat }}</a>
-	</button>
-	{% endfor %}
-</div>
-<hr/>
-
 <ul class="post-list">
 	{% assign cats = site.notes | map: 'categories' | join: ',' | split: ',' | uniq %}
 	{% for cat in cats %}
@@ -34,8 +17,8 @@ description: School notes, resources etc.
 		</div>
 		<br>
 		{% assign posts = site.notes | sort:"title" %}
-		{% for post in posts%}
-			{% if post.categories contains cat %}
+		{% for post in posts %}
+			{% if post.categories contains cat and post.published %}
 			<li>
 				<h3 style="margin-left:25px;font-size:17px; margin-top: -15px;">
 					<i class="fa fa-sticky-note-o" aria-hidden="true"></i>

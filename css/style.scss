@@ -5,7 +5,7 @@
 
 .photos{position:relative;margin-bottom:15px;margin-top:8px}
 .photo{display:inline-block;margin-right:15px;margin-bottom:15px;float:left}
-.photo img{background-color:#f0f0f0;width:50px;height:50px;border-radius:10px}
+.photo img{background-color:#f0f0f0;width:50px;height:50px;}
 
 // Our variables
 $base-font-family: "PT Sans", Helvetica, Arial, sans-serif;
@@ -44,15 +44,6 @@ $on-laptop:        800px;
         @content;
     }
 }
-
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
 
 
 /**
@@ -519,7 +510,8 @@ pre {
   text-transform: lowercase;
 }
 .page-link {
-  color: rgb(170, 170, 170);
+  weight: bold;
+  color: rgb(0, 0, 0);
 }
 .site-nav {
   .page-link {
