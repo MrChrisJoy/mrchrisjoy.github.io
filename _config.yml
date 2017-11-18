@@ -1,14 +1,7 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 title: Chris Joy
 email: chrisjoy@protonmail.com
-description: Chris Joy's personal website. Aims to redesign teaching modes, improve transport effeciency and increase financial transparency.
+description: Chris Joy's personal website.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 twitter_username: mrchrisjoy
@@ -18,11 +11,11 @@ paginate: 5
 permalink: /:categories/:title/
 
 future: true
-gems: [jekyll-paginate, kramdown, jekyll-seo-tag, jekyll-sitemap]
+plugins: [jekyll-paginate, kramdown, jekyll-seo-tag, jekyll-sitemap]
 # Build settings
 markdown: kramdown
 
 collections:
-  resources:
+  notes:
     output: true
     permalink: /:categories/:title/

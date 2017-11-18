@@ -1,12 +1,11 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 @charset "utf-8";
 
 .photos{position:relative;margin-bottom:15px;margin-top:8px}
 .photo{display:inline-block;margin-right:15px;margin-bottom:15px;float:left}
 .photo img{background-color:#f0f0f0;width:50px;height:50px;border-radius:10px}
-
 
 // Our variables
 $base-font-family: "PT Sans", Helvetica, Arial, sans-serif;
@@ -26,7 +25,7 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    1024px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -428,7 +427,7 @@ pre {
 }
 .postContent {
   padding-top: 3.5em;
-  text-align: center;
+  // text-align: center;
 }
 .postDate {
   float: left;
@@ -671,7 +670,7 @@ pre {
   margin-bottom: $spacing-unit;
 }
 .post-title {
-  font-size: 62px;
+  font-size: 35px;
 
   text-align: center;
   font-family: "PT Sans";
@@ -684,22 +683,22 @@ pre {
   margin-bottom: $spacing-unit;
   padding-bottom: 3em !important;
   p {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
   h2 {
-    font-size: 32px;
+    font-size: 25px;
     @include media-query($on-laptop) {
       font-size: 28px;
     }
   }
   h3 {
-    font-size: 26px;
+    font-size: 20px;
     @include media-query($on-laptop) {
       font-size: 22px;
     }
   }
   h4 {
-    font-size: 20px;
+    font-size: 16px;
     @include media-query($on-laptop) {
       font-size: 18px;
     }

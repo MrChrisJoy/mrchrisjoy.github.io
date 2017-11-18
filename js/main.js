@@ -5,7 +5,8 @@ function showDiv(divId) {
 	$("."+divId).show("slow", function(){});
 	$("button").removeClass('active');
 }
-function myFunction() {
+
+function toggleNav() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
