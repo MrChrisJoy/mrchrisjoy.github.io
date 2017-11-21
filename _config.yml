@@ -8,14 +8,13 @@ twitter_username: mrchrisjoy
 github_username:  mrchrisjoy
 instagram_username: mrchrisjoy
 paginate: 5
-permalink: /:categories/:title/
-
+permalink: /:title/
+include: ['_pages']
 future: true
-plugins: [jekyll-paginate, kramdown, jekyll-seo-tag, jekyll-sitemap]
-# Build settings
 markdown: kramdown
+# Build settings
+plugins: [jekyll-paginate, kramdown, jekyll-seo-tag, jekyll-sitemap]
 
 collections:
   notes:
     output: true
-    permalink: /:categories/:title/
