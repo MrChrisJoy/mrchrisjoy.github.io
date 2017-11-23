@@ -1,0 +1,34 @@
+<hr class="nav"/>
+<div class="wrapper">
+    <div class="row">
+        <div class="col-4 col-md-4">
+            <span class="footer-link-title">Recent Blog Posts</span>
+            <ul>
+            {% assign posts = site._posts | sort:"date" | reverse %}
+            {% for post in posts limit:5 %}{% if post.published %}
+                <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+            {% endif %}{% endfor %}    
+            </ul>
+        </div>
+        <div class="col-4 col-md-4">
+            <span class="footer-link-title">Recent Notes</span>
+            <ul>
+                {% assign posts = site._notes | sort:"date" | reverse %}
+                {% for post in posts limit:5 %}{% if post.published %}
+                <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+                {% endif %}{% endfor %}
+            </ul>          
+        </div>
+        <div class="col-4 col-md-4">
+            <span class="footer-link-title">Recent Projects</span>
+            <ul>
+                {% assign posts = site._projects | sort:"date" | reverse %}
+                {% for post in posts limit:5 %}{% if post.published %}
+                <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+                {% endif %}{% endfor %}
+            </ul>            
+        </div>
+    </div>
+</div>
+<br>
+<br>

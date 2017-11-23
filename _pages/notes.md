@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Notes
-permalink: /notes/
+permalink: notes
 tagline: "Cheatsheets, Notes and Other Resources..."
 description: School notes, resources etc.
 ---
 <ul class="post-list">
-	{% assign cats = site.notes | map: 'categories' | join: ',' | split: ',' | uniq %}
+	{% assign cats = site._notes | map: 'categories' | join: ',' | split: ',' | uniq %}
 	{% for cat in cats %}
 	<div class="postBody {{ cat }}">
 		<div class="manual-post">
@@ -16,10 +16,10 @@ description: School notes, resources etc.
 			</div>
 		</div>
 		<br>
-		{% assign posts = site.notes | sort:"title" %}
+		{% assign posts = site._notes | sort:"title" %}
 		{% for post in posts %}
 			{% if post.categories contains cat and post.published %}
-			<li>
+			<li style="list-style-type: none;">
 				<h3 style="margin-left:25px;font-size:17px; margin-top: -15px;">
 					<i class="fa fa-sticky-note-o" aria-hidden="true"></i>
 					<a class="post-link-main" style="padding-left:5px;" href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }}</a>

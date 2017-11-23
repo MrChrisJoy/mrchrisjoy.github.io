@@ -1,11 +1,23 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+</div>
+
+<div style="
+  background: url('{{ page.cover }}');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  margin-top: -70px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ">
+  <div class="post-cover-title">
     <center>
-      {% if page.author %} By
+        <h1>{{ page.title }}</h1>
+        {% if page.author %} By
       <strong>
         <span class="small-site-title"> {{page.author}} </span>
       </strong>on {% endif %} {% if page.date %}
@@ -14,7 +26,11 @@ layout: default
       </time>
       {% endif %}
     </center>
-  </header>
+  </div>
+</div>
+<br>
+<div class="wrapper">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
@@ -31,3 +47,4 @@ layout: default
   </footer>
 </article>
 {% include disqus.html %}
+{% include footer_links.html %}    

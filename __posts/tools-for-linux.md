@@ -1,13 +1,16 @@
 ---
 layout: post
-title:  "3 Free Tools to Maintain your Linux Cluster"
+title:  "[Test Post] Tools to Maintain your Linux Servers"
 date:   2017-01-26 19:45:31 +1000
 author: "Chris Joy"
 categories: sysadmin
-published: false
+published: true
+cover: http://www.cwlynch.com/wp-content/uploads/2016/12/server.jpg
 ---
 
-![](http://www.cwlynch.com/wp-content/uploads/2016/12/server.jpg)
+This post is just a sample post, used to test my blog.
+
+Please ignore it.
 
 Here are my 3 favorite tools I use in order to monitor and maintain my private linux cluster:
 

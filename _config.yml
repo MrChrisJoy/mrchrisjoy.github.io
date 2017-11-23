@@ -1,12 +1,8 @@
 # Site settings
 title: Chris Joy
-email: chrisjoy@protonmail.com
-description: Chris Joy's personal website.
+description: Chris Joy's personal website. Chris is a level 7 student of the internet, lurking around the interwebs, discovering dank memes and investment strategies.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
-twitter_username: mrchrisjoy
-github_username:  mrchrisjoy
-instagram_username: mrchrisjoy
 paginate: 5
 permalink: /:title/
 include: ['_pages']
@@ -16,5 +12,12 @@ markdown: kramdown
 plugins: [jekyll-paginate, kramdown, jekyll-seo-tag, jekyll-sitemap]
 
 collections:
-  notes:
+  _notes:
     output: true
+    permalink: /notes/:title/
+  _posts:
+    output: true
+    permalink: /:title/
+  _projects:
+    output: true
+    permalink: /projects/:title/
