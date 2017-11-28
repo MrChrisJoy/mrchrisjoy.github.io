@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Fuel Guru - Daily Route Planner"
+title:  "Fuel Guru - Price Prediction Platform
 date:   2017-10-19 10:13:42 +1000
 author: "Chris Joy"
 categories: platform
