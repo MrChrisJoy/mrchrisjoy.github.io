@@ -4,7 +4,7 @@ title:  "Personal Blog written in Jekyll"
 date:   2017-11-22 13:48:31 +1000
 author: "Chris Joy"
 categories: website
-cover: /images/projects/chris-cover.jpg
+image: /images/projects/chris-cover.jpg
 published: true
 ---
 

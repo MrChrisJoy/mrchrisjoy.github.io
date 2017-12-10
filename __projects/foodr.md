@@ -3,7 +3,7 @@ layout: post
 title:  "Foodr - Food Finder App"
 date:   2017-03-10 12:15:31 +1000
 author: "Chris Joy"
-cover: /images/projects/foodr-cover.jpg
+image: /images/projects/foodr-cover.jpg
 categories: platform
 published: true
 ---

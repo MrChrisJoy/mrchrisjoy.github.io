@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Math1231: Maple Lab Test Questions & Solutions"
-cover: /images/notes/maple-test/maple-cover.jpg
+image: /images/notes/maple-test/maple-cover.jpg
 date: '2017-01-26 19:45:31 +1100'
 author: Chris Joy
 categories: unsw-math

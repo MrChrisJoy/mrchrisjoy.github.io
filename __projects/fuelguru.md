@@ -5,7 +5,7 @@ date: 2017-10-19 10:13:42 +1000
 author: "Chris Joy"
 categories: platform
 published: true
-cover: /images/projects/fuelguru-cover.jpg
+image: /images/projects/fuelguru-cover.jpg
 ---
 
 Fuel Guru is an intuitive, user friendly web app allowing users to quickly find fuel stations to fit their needs. It allows users to specify what is important to them about their fuel and then easily view relevant results, helping to save both time and money for everyone using the app. In order to provide accurate information the price and location data in our system is updated daily from various sources including Fuel NSW and Google Maps. This ensures that all data provided to users is accurate, up to date, and relevant.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Nerostack - Trading Simulator"
-cover: /images/projects/nerostack-cover.jpg
+image: /images/projects/nerostack-cover.jpg
 date:   2015-09-12 16:12:11 +1000
 author: "Chris Joy"
 categories: platform

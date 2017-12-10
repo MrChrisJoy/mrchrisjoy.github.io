@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CreateUNSW's Website"
-cover: /images/projects/create-cover.jpg
+image: /images/projects/create-cover.jpg
 date:   2016-05-22 11:12:31 +1000
 author: "Chris Joy"
 categories: website

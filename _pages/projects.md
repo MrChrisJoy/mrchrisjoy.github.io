@@ -9,7 +9,7 @@ description: My portfolio highlighting a suite of professional and elemetary pro
     {% assign posts = site._projects | sort:"date" | reverse %}
     {% for post in posts %} {% if post.published %}
     <div class="col-6 col-md-6 col-sm-6 post-card-col">
-        <div style="background: url('{{post.cover}}'); background-size: cover"
+        <div style="background: url('{{post.image}}'); background-size: cover"
             class="card">
             <div class="row post-card-col post-card-col-btn">
                 <div class="col-4 col-md-4">
