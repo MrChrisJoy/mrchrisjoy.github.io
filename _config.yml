@@ -2,7 +2,7 @@
 title: Chris Joy
 description: Chris Joy's personal website. Chris is a level 7 student of the internet, lurking around the interwebs, discovering dank memes and investment strategies.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: # the base hostname & protocol for your site
+url: https://chris.xyz # the base hostname & protocol for your site
 paginate: 5
 permalink: /:title/
 include: ['_pages']
