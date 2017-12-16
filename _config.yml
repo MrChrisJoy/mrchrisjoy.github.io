@@ -1,6 +1,6 @@
 # Site settings
 title: Chris Joy
-description: Chris Joy's personal website. Chris is a level 7 student of the internet, lurking around the interwebs, discovering dank memes and investment strategies.
+description: Chris Joy's personal website. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://chris.xyz # the base hostname & protocol for your site
 paginate: 5
