@@ -7,10 +7,6 @@ categories: platform
 image: /images/projects/birdi-cover.jpg
 published: true
 ---
-Birdi supports businesses to integrate drone-based solutions into their operations. We know every company is different, that is why we work with you to develop the solution that suits your individual needs.
+Birdi supports businesses to integrate drone-based solutions into their operations. We know every company is different, that is why we work with you to develop the solution that suits your individual needs. I'm a software developer at BIRDI Pty Ltd. 
 
-## My Role - Developer
-I work as a full-stack developer at BIRDI Pty Ltd. 
-
-# Links
 - [BIRDI Homepage](https://birdi.com.au)

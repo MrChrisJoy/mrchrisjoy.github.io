@@ -3,16 +3,13 @@ layout: default
 ---
 </div>
 
-<div style="
-  background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('{{ page.image }}');
-  background-size: cover;
-  height: 400px;
-  margin-top: -70px;
-  background-color: grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  ">
+<div class="post-header"
+  style="
+    {% if page.image %}
+    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('{{ page.image }}');
+    height: 400px;
+    {% endif %}"
+>
   <div class="post-cover-title">
     <center>
         <h1>{{ page.title }}</h1>
@@ -46,4 +43,3 @@ layout: default
   </footer>
 </article>
 {% include disqus.html %}
-{% include footer_links.html %}    

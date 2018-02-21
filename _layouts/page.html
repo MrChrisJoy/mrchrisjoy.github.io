@@ -2,17 +2,7 @@
 layout: default
 ---
 <article class="post">
-  {%if page.tagline%}
-  <div class="tagline">
-    <span class="page-title">{{page.title}}</span>
-    <span class="page-tagline">
-      <em>{{page.tagline}}</em>
-    </span>
-  </div>
-  <br>  
-  {% endif %}
   <div class="post-content">
     {{ content }}
   </div>
 </article>
-{% include footer_links.html %}
