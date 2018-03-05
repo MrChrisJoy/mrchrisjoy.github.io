@@ -15,19 +15,25 @@ description: School notes, resources etc.
 				<strong>{{ cat }}</strong>
 			</div>
 		</div>
-		<br>
-		{% assign posts = site._notes | sort:"title" %}
-		{% for post in posts %}
-			{% if post.categories contains cat and post.published %}
-			<li style="list-style-type: none;">
-				<h3 style="margin-left:25px;font-size:17px; margin-top: -15px;">
-					<i class="fa fa-sticky-note-o" aria-hidden="true"></i>
-					<a class="post-link-main" style="padding-left:5px;" href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }}</a>
-					<span style="float:right;" class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
-				</h3>
-			</li>
-			{% endif %}
-		{% endfor %}
+		<div class="row post-list">
+			{% assign posts = site._notes | sort:"date" | reverse %}
+			{% for post in posts %} {% if post.published %}
+			<div class="col-6 col-md-6 col-sm-6 post-card-col">
+				<div style="background: url('{{post.image}}'); background-size: cover"
+					class="card">
+					<div class="row post-card-col post-card-col-btn">
+						<div class="col-4 col-md-4">
+							<a href="{{post.url}}"><div class="post-card-btn">Read More</div></a>
+						</div>
+					</div>
+					<div class="post-card-contents">
+						<h2>{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></h2>
+						<p>{{ post.content | strip_html | truncatewords: 30}}</p>
+					</div>
+				</div>
+			</div>
+			{% endif %}{% endfor %}
+		</div>
 	</div>
 	{% endfor %}
 </ul>
